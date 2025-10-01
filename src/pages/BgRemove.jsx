@@ -44,7 +44,7 @@ export default function BgRemove() {
       setProcessedImage(bgRemovedUrl);
     } catch (error) {
       console.error('Background removal failed:', error);
-      alert('Failed to remove background. Check console for details.');
+      alert('Free Credits limit is over.');
     } finally {
       setIsProcessing(false);
     }
