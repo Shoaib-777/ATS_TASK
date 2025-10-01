@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Upload, Scissors, Download, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import axios from 'axios';
 
-export default function BgRemove() {
+const BgRemove=()=> {
   const [originalImage, setOriginalImage] = useState(null);
   const [processedImage, setProcessedImage] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -263,3 +263,4 @@ export default function BgRemove() {
     </div>
   );
 }
+export default BgRemove

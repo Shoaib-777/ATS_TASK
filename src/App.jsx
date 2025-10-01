@@ -6,11 +6,14 @@ import BgRemove from './pages/BgRemove'
 
 const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Home />}/>
-      <Route path='/bg-remove' element={<BgRemove />}/>
-      <Route path='/products/:id' element={<ProductsDetails />}/>
-    </Routes>
+     <Routes>
+        {/* static routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/bg-remove" element={<BgRemove />} />
+
+        {/* dynamic route */}
+        <Route path="/products/:id" element={<ProductsDetails />} />
+      </Routes>
   )
 }
 
