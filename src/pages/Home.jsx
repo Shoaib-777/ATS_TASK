@@ -89,7 +89,7 @@ const Home = () => {
                 <h2 className="card-title">{v.title}</h2>
                 <p className='line-clamp-2'>{v.description}</p>
                 <div className="card-actions justify-end">
-                  <Link to={v.id === 6 ? "/bgremove" : `/products/${v.id}`}>
+                  <Link to={v.id === 6 ? "/bg-remove" : `/products/${v.id}`}>
                     <button className="btn btn-primary">View Details</button>
                   </Link>
                 </div>
