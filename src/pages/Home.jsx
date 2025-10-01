@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const productsData = [
+     {
+      id: 6,
+      title: "Bg Remove Webpage",
+      category: "full stack",
+      description: "Remove Your Background of images free with a Click and Free of cost"
+    },
     {
       id: 1,
       title: "Wireless Headphones",
@@ -34,12 +40,7 @@ const Home = () => {
       category: "backend",
       description: "Compact 4K action camera for capturing adventures and extreme sports."
     },
-    {
-      id: 6,
-      title: "Bg Remove Webpage",
-      category: "full stack",
-      description: "Remove Your Background of images free with a Click and Free of cost"
-    }
+   
   ];
 
   // state for filter
