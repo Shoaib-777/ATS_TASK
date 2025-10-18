@@ -8,7 +8,8 @@ const Home = () => {
       id: 6,
       title: "Bg Remove Webpage",
       category: "full stack",
-      description: "Remove Your Background of images free with a Click and Free of cost"
+      description: "Remove Your Background of images free with a Click and Free of cost",
+      imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwVnNAVpztrbReTtOOsXmQ-Slh3bVtk52lA&s"
     },
     {
       id: 1,
@@ -81,7 +82,7 @@ const Home = () => {
             >
               <figure>
                 <img
-                  src={`https://placehold.co/600x400?text=${v.title}`}
+                  src={v.imageUrl || `https://placehold.co/600x400?text=${v.title}`}
                   alt={v.title}
                   className='hover:scale-125'
                 />
