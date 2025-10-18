@@ -36,7 +36,6 @@ const BgRemove = () => {
 
     try {
       const formData = new FormData();
-      console.log("iam original file",originalFile)
       formData.append("file", originalFile);
       formData.append("upload_preset", "ats_upload"); 
       formData.append("cloud_name","dek0rvlct")
@@ -65,7 +64,6 @@ const BgRemove = () => {
 
       // ✅ Convert blob to object URL
       const processedBlob = removeBgResponse.data;
-      console.log("iam image after bg remove",processedBlob)
       const processedUrl = URL.createObjectURL(processedBlob);
       setProcessedImage(processedUrl);
     } catch (error) {
